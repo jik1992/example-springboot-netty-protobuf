@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "com.netty.common.protobuf";
+option java_outer_classname = "Message";
+import "command.proto";
+
+message MessageBase {
+  string clientId = 1;
+  CommandType cmd = 2;
+  string method = 3;
+  string data = 4;
+}

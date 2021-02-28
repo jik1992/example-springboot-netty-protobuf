@@ -1,4 +1,4 @@
-package com.netty.client;
+package com.netty.client.netty;
 
 import io.netty.channel.Channel;
 

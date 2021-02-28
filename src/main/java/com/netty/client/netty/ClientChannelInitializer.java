@@ -1,10 +1,7 @@
-package com.netty.client;
+package com.netty.client.netty;
 
-import com.netty.client.handler.IdleClientHandler;
 import com.netty.common.protobuf.Message;
 import com.netty.common.protobuf.Message.MessageBase;
-import com.netty.server.handler.IdleServerHandler;
-import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.SimpleChannelInboundHandler;

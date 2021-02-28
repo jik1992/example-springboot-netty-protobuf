@@ -1,4 +1,4 @@
-package com.netty.server;
+package com.netty.server.netty;
 
 import java.util.concurrent.TimeUnit;
 
@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import com.netty.common.protobuf.Message.MessageBase;
-import com.netty.server.handler.IdleServerHandler;
+import com.netty.server.netty.handler.IdleServerHandler;
 
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.channel.ChannelInitializer;

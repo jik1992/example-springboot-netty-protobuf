@@ -1,6 +1,6 @@
 package com.netty.client.service;
 
-import com.netty.client.ChannelClientRepository;
+import com.netty.client.netty.ChannelClientRepository;
 import com.netty.client.utils.Configure;
 import com.netty.common.protobuf.Command;
 import com.netty.common.protobuf.Message;
@@ -25,7 +25,8 @@ public class EchoService {
                     Message.MessageBase.newBuilder()
                             .setClientId(Configure.CLIENT_ID)
                             .setCmd(Command.CommandType.PUSH_DATA)
-                            .setData("This is upload data")
+                            .setMethod("method()")
+                            .setData("params")
                             .build()
             );
         }

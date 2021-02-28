@@ -1,4 +1,4 @@
-package com.netty.server.handler;
+package com.netty.server.netty.handler;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;

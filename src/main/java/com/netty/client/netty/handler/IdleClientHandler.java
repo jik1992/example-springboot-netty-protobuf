@@ -1,4 +1,4 @@
-package com.netty.client.handler;
+package com.netty.client.netty.handler;
 
 import java.util.concurrent.TimeUnit;
 
@@ -7,7 +7,7 @@ import io.netty.channel.ChannelHandler;
 import org.apache.log4j.Logger;
 
 import com.netty.common.protobuf.Message;
-import com.netty.client.TCPClient;
+import com.netty.client.netty.TCPClient;
 import com.netty.common.protobuf.Command.CommandType;
 import com.netty.common.protobuf.Message.MessageBase;
 
