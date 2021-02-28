@@ -33,7 +33,7 @@ import io.netty.handler.logging.LoggingHandler;
 @SpringBootApplication
 @ComponentScan(value = "com.netty.server")
 @PropertySource(value= "classpath:/application.properties")
-public class Application{
+public class ApplicationServer {
 	@Configuration
     @Profile("production")
     @PropertySource("classpath:/application.properties")
@@ -46,7 +46,7 @@ public class Application{
     static class Local
     { }
 	public static void main(String[] args) throws Exception {
-		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+		ConfigurableApplicationContext context = SpringApplication.run(ApplicationServer.class, args);
         TCPServer tcpServer = context.getBean(TCPServer.class);
         tcpServer.start();
 	}

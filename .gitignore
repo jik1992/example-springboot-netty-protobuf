@@ -1,2 +1,4 @@
 /target/
 /src-gen/
+.idea/
+netty-dmeo.iml
